@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--STYLE-->
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--HEADER DESIGN-->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <nav class="navbar" id="navLinks">
+      <a href="#home" class="active" onclick="closeMenu()">Home</a>
+      <a href="#about" onclick="closeMenu()">About</a>
+      <a href="#skills" onclick="closeMenu()">Skills</a>
+      <a href="#projects" onclick="closeMenu()">Projects</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+  </header>
+
+  <!--HOME SECTION DESIGN-->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hi, Myself</h3>
+      <h1>Jegadheswari</h1>
+      <h3>And I'm a <span class="multiple-text"></span></h3>
+      <p>As a recent graduate, I am seeking a role which allows me to continue learning and perfecting my skills as I provide high-quality work, and encourages me to flourish .</p>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <a href="#" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="image/person.png" alt="">
+    </div>
+  </section>
+
+  <!--ABOUT SECTION DESIGN-->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="image/person.png" alt="">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Graduated</h3>
+      <p>I am a MSc postgraduate in the specialization of Computer Science. And I was served as a President in my UG graduation period for 1 year and also as a Student Co-ordinator in the postgraduation around 3 months.</p>
+      <a href="#" class="btn">Read more</a>
+    </div>
+  </section>
+
+  <!--SKILLS SECTION DESIGN-->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+      <div class="skills-box">
+        <i class="fa-brands fa-java"></i>
+        <h3>Java Programming</h3>
+        <p>I have done my PG project on SpringBoot-Java as Backend in the title of Cafe Managing System and also I certified in the Java Programming course in NPTEL.</p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-angular"></i>
+        <h3>Angular</h3>
+        <p>I have done my PG project on Angular as Frontend in the title of Cafe Managing System and also I certified in the Angular Basics course in Simplilearn.</p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-code"></i>
+        <h3>HTML and CSS</h3>
+        <p>I have done my Personal-Portfolio Website using HTML and CSS and also certified in Web Development for Beginners in Simplilearn.</p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!--PROJECTS SECTION DESIGN-->
+  <section class="projects" id="projects">
+    <h2 class="projects">My <span>Projects</span></h2>
+
+    <div class="projects-container">
+      <div class="projects-box">
+        <img src="image/1.png" alt="">
+        <div class="projects-layer">
+          <h4>Cafe Managing System</h4>
+          <p>PG Project for Cafe shop for ordering and generating bill.</p>
+          <i class="fa-solid fa-up-right-from-square"></i>
+        </div>
+      </div>
+
+      <div class="projects-box">
+        <img src="image/2.png" alt="">
+        <div class="projects-layer">
+          <h4>Personal Portfolio</h4>
+          <p>Self Project for displaying skills and projects.</p>
+          <i class="fa-solid fa-up-right-from-square"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACT SECTION DESIGN-->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <!--FOOTER SECTION DESIGN-->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 by @Jega | All Rights Reserved</p>
+    </div>
+
+    <div class="footer-icon">
+      <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+  </footer>
+  
+  <!--SCROLL REVEAL JS-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--TYPED JS-->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!--MAIN JS-->
+  <script src="js/script.js"></script>
+</body>
+</html>
